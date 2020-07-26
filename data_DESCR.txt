@@ -1,0 +1,22 @@
+
+year (int) --> The year the house was built. (Correctly formatted).
+
+stories (int) --> The number of story buildings the house has. If it is a single-story house or a two, three-story house.
+
+num_bedrooms (int) -> The number of bedrooms available in the house.
+
+full_bathrooms, half_bathrooms (str) --> Number of full bathrooms and/or half bathrooms are in the house in question. Half-bathrooms are the ones without showers while full-bathrooms are the ones with showers.
+
+livable_sqft, total_sqft (int or float) --> The livable square feet and the total square feet tells us the size of the house. The difference is that the total_sqft includes any outside patio space that is not part of the actual living area of the house.
+
+garage_type (str) --> There are 3 possible outcomes here; an attached house garage, a detached house garage, and no house garage.
+
+garage_sqft (int or float) --> This tells us the size of the garage if it exists or 0 sqft if it does not.
+
+carport_sqft (int or float) --> These are like tents for cars and are not as enclosed as garages. This tells us the size of the carport in square feet.
+
+has_fireplace,	has_pool, has_central_heating, has_central_cooling (boolean) --> This tells us each feature the house has, does it have a fireplace in it? True or False? How about a swimming pool? Does it have a central house heater and/or Cooler? These are of course likely to affect the price of the house.
+
+house_number (int), street_name (str), unit_number (obj), city (str), zip_code (str) --> These are just the addresses of the house if such information is available.
+
+sale_price (int or float) --> The actual price that the house was sold.This is the value our ML system is going to be predicting, giving newer data sets.
